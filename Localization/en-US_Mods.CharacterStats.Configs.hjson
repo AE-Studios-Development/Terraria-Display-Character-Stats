@@ -1,0 +1,94 @@
+CharacterStatsConfig: {
+	DisplayName: Display Character Stats Configs
+	Headers.StatVisibility: Toggle Stat Visibility
+
+	DamageMultiplier: {
+		Label: "[i:4] Damage Multiplier"
+		Tooltip: ""
+	}
+
+	CriticalHitChance: {
+		Label: "[i:3520] Critical Hit Chance"
+		Tooltip: ""
+	}
+
+	AttackSpeed: {
+		Label: "[i:936] Attack Speed"
+		Tooltip: ""
+	}
+
+	Knockback: {
+		Label: "[i:442] Knockback"
+		Tooltip: ""
+	}
+
+	ArmorPenetration: {
+		Label: "[i:3212] Armor Penetration"
+		Tooltip: ""
+	}
+
+	Defense: {
+		Label: "[i:156] Defense"
+		Tooltip: ""
+	}
+
+	Endurance: {
+		Label: "[i:938] Endurance"
+		Tooltip: ""
+	}
+
+	LifeRegeneration: {
+		Label: "[i:49] Life Regeneration"
+		Tooltip: ""
+	}
+
+	MovementSpeed: {
+		Label: "[i:54] Movement Speed"
+		Tooltip: ""
+	}
+
+	JumpHeight: {
+		Label: "[i:159] Jump Height"
+		Tooltip: ""
+	}
+
+	MiningSpeed: {
+		Label: "[i:1] Mining Speed"
+		Tooltip: ""
+	}
+
+	EnemyAggro: {
+		Label: "[i:193] Enemy Aggro"
+		Tooltip: ""
+	}
+
+	Luck: {
+		Label: "[i:4414] Luck"
+		Tooltip: ""
+	}
+
+	FishingPower: {
+		Label: "[i:2291] Fishing Power"
+		Tooltip: ""
+	}
+
+	ManaRegeneration: {
+		Label: "[i:111] Mana Regeneration"
+		Tooltip: ""
+	}
+
+	ManaCost: {
+		Label: "[i:109] Mana Cost"
+		Tooltip: ""
+	}
+
+	MaxMinions: {
+		Label: "[i:5069] Max Minions"
+		Tooltip: ""
+	}
+
+	MaxSentries: {
+		Label: "[i:3825] Max Sentries"
+		Tooltip: ""
+	}
+}

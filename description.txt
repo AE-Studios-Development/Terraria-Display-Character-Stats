@@ -1,0 +1,118 @@
+This mods displays most of your character statistics below your health bar / map. This mod can be useful for certain class builds or aiming for a specific stat value.
+
+You can change the class of your offensive stats (see keybinds below) to the main vanilla classes such as generics (for stats bonus that applies to all classes) melee, ranged, magic and summoner or even to a custom modded damage class!
+
+There is also "automatic", which sets the class to the weapon you are holding. If the held item doesn't have a damage class, it will be set to generics instead.
+
+Visibility for specific stats can be toggled in the configs.
+
+KEYBINDS
+L - Toggle Stats Visibiliy
+K - Change Damage Stat Class (defaulted to automatic)
+
+DISPLAYED STATS:
+- Damage Multiplier
+- Critical Hit Chance
+- Attack Speed
+- Knockback
+- Endurance (damage reduction)
+- Armor Penetration
+- Life Regeneration
+- Luck
+- Movement Speed
+- Mana Regeneration
+- Mana Efficiency (mana cast reduction)
+- Mining Speed
+- Enemy Aggro
+- Jump Height
+- Max Minions
+- Max Sentries
+- Defense
+- Fishing Power
+
+DISPLAY ICON COLORS
+- Red = Offensive (Will change accordingly to the selected damage class)
+- Yellow = Defensive
+- Green = Movement
+- Blue = Others
+- Purple = Magic/Summon
+
+*Localization is currently work in progress*
+
+French Localization by Cedminer66
+Spanish Localization by eloas3
+
+Terraria Version: v1.4.4.9
+tModLoader Version: v2023.12.3.1
+
+CHANGELOGS:
+
+v0.6.1 - 2/9/2024
+- Added Icons to respective stats name in the configs for easier navigation
+- Updated the Steam workshop page thumbnails
+- Fixed the damage class text missing a space for modded classes
+- Fixed some missing spanish localization text in the configs
+
+v0.6 - 2/7/2024
+- Added Configs for toggling the visibility for specific stats
+- Added 2 new stats: Fishing power and defense
+- Updated the localization files
+- Updated to to latest version of TmodLoader
+
+v0.5.3 - 1/15/2024
+- Added a new stat: Max Sentries
+- Improved readability on some info texts
+
+v0.5.2.1 - 1/3/2024
+- Updated to the latest version of TmodLoader
+
+v0.5.2 - 11/16/2023
+- Updated to latest version of TmodLoader
+- Attempt to fix a bug where info display names wouldn't show correctly
+
+v0.5.1 - 10/31/2023
+- Displayed stats are now sorted in categories
+
+v0.5 - 10/22/2023
+- Fixed the Zenith and Summon whips not showing offensive stats
+- Fixed the Endurance stat not taking account multiplicative damage reduction effects (only works with vanilla buffs)
+- The Attack Speed stat will now depend on what attack speed class the weapon can support
+- Minor Script optimizations
+
+v0.4.4 - 10/19/2023
+- Fixed incorrect version shown on the mod manager menu (oops)
+- Simplified the text shown on chat when toggling visibility or changing damage class
+- Updated the build to the latest patch of Tmodloader
+
+v0.4.3 - 10/2/2023
+- Updated the build to the latest version of Tmodloader
+- Fixed an issue with localization files not displaying special characters
+- Script Optimizations
+
+v0.4.2 - 9/23/2023
+- Added partial localization support for French (by me) and Spanish (by eloas3)
+- Fixed the Magiluminescence (and possibly other horizontal speed modifiers) not changing the Move Speed Stat
+
+v0.4.1 - 9/22/2023
+- The Jump Height Stat will now takes account jump speed for calculating max jump height
+- Increased the Luck Stat precision
+
+v0.4 - 9/17/2023
+- Added support for modded damage classes
+- Secondary vanilla damage classes can now be toggled
+- Main Player Script Optimizations
+
+v0.3 - 9/15/2023
+- Added an "Automatic" damage class toggle, which changes the damage class depending on the held weapon/item
+- Each Display Icons will now have different colors depending on the stat type
+
+v0.2 - 9/11/2023
+- Added 3 new stats: Max Minions, Jump Height and Enemy Aggro
+- Every offensive stats should now support all main class types
+- The Luck Stats is now displayed in percentage
+
+v0.1.1 - 9/10/2023
+- Changed the Info Display Icons
+
+v0.1 - 9/9/2023
+(initial build)

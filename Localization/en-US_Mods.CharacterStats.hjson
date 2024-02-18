@@ -1,0 +1,34 @@
+Mods: {
+	CharacterStats: {
+		Keybinds: {
+			ChangeStatClassKeybind.DisplayName: Change Damage Class
+			StatVisibilityKeybind.DisplayName: Toggle Stats Visibility
+		}
+
+		InfoDisplays: {
+			d1_Aggro.DisplayName: Enemy Aggro
+			a5_ArmorPenetration.DisplayName: Armor Penetration
+			a3_AttackSpeed.DisplayName: Attack Speed
+			a2_CriticalChance.DisplayName: Critical Chance
+			a1_Damage.DisplayName: Damage
+			b2_Endurance.DisplayName: Endurance
+			c2_JumpHeight.DisplayName: Jump Height
+			a4_Knockback.DisplayName: Knockback
+			b3_LifeRegeneration.DisplayName: Life Regeneration
+			d2_Luck.DisplayName: Luck
+			e2_ManaCost.DisplayName: Mana Efficiency
+			e1_ManaRegeneration.DisplayName: Mana Regeneration
+			e3_MaxMinions.DisplayName: Max Minions
+			c3_MiningSpeed.DisplayName: Mining Speed
+			c1_MovementSpeed.DisplayName: Movement Speed
+			e4_MaxSentries.DisplayName: Max Sentries
+			b1_Defense.DisplayName: Defense
+			d3_FishingPower.DisplayName: Fishing Power
+		}
+	}
+}
+
+Keybinds: {
+	StatVisibilityKeybind.DisplayName: Stat Visibility Keybind
+	ChangeStatClassKeybind.DisplayName: Change Stat Class Keybind
+}

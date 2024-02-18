@@ -1,0 +1,34 @@
+Mods: {
+	CharacterStats: {
+		Keybinds: {
+			ChangeStatClassKeybind.DisplayName: Changer de class de dégâts
+			StatVisibilityKeybind.DisplayName: Alterner la visibilité des stats
+		}
+
+		InfoDisplays: {
+			d1_Aggro.DisplayName: Aggression des ennemis
+			a5_ArmorPenetration.DisplayName: Pénétration d'armure
+			a3_AttackSpeed.DisplayName: Vitesse d'attaque
+			a2_CriticalChance.DisplayName: Chance de coup critique
+			a1_Damage.DisplayName: Dégâts
+			b2_Endurance.DisplayName: Endurance
+			c2_JumpHeight.DisplayName: Hauteur de saut
+			a4_Knockback.DisplayName: Recul
+			b3_LifeRegeneration.DisplayName: Régénération de vie
+			d2_Luck.DisplayName: Chance
+			e2_ManaCost.DisplayName: Coût de mana
+			e1_ManaRegeneration.DisplayName: Régénération de mana
+			e3_MaxMinions.DisplayName: Maximum de Minions
+			c3_MiningSpeed.DisplayName: Vitesse de la pioche
+			c1_MovementSpeed.DisplayName: Vitesse de mouvement
+			e4_MaxSentries.DisplayName: Maximum de tourelles
+			b1_Defense.DisplayName: Défense
+			d3_FishingPower.DisplayName: Puissance de pêche
+		}
+	}
+}
+
+Keybinds: {
+	// StatVisibilityKeybind.DisplayName: Stat Visibility Keybind
+	// ChangeStatClassKeybind.DisplayName: Change Stat Class Keybind
+}

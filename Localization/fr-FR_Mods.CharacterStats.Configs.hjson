@@ -1,0 +1,94 @@
+CharacterStatsConfig: {
+	DisplayName: Display Character Stats Configs
+	Headers.StatVisibility: Visibilité des stats
+
+	DamageMultiplier: {
+		Label: Degats
+		// Tooltip: ""
+	}
+
+	CriticalHitChance: {
+		Label: Chance de coup critique
+		// Tooltip: ""
+	}
+
+	AttackSpeed: {
+		Label: Vitesse d'attaque
+		// Tooltip: ""
+	}
+
+	Knockback: {
+		Label: Recul
+		// Tooltip: ""
+	}
+
+	ArmorPenetration: {
+		Label: Penetration d'armure
+		// Tooltip: ""
+	}
+
+	Defense: {
+		Label: Defense
+		// Tooltip: ""
+	}
+
+	Endurance: {
+		Label: Endurance
+		// Tooltip: ""
+	}
+
+	LifeRegeneration: {
+		Label: Regeneration de vie
+		// Tooltip: ""
+	}
+
+	MovementSpeed: {
+		Label: Vitesse de mouvement
+		// Tooltip: ""
+	}
+
+	JumpHeight: {
+		Label: Hauteur de saut
+		// Tooltip: ""
+	}
+
+	MiningSpeed: {
+		Label: Vitesse de la pioche
+		// Tooltip: ""
+	}
+
+	EnemyAggro: {
+		Label: Aggression des ennemis
+		// Tooltip: ""
+	}
+
+	Luck: {
+		Label: Chance
+		// Tooltip: ""
+	}
+
+	FishingPower: {
+		Label: Puissance de peche
+		// Tooltip: ""
+	}
+
+	ManaRegeneration: {
+		Label: Regeneration de mana
+		// Tooltip: ""
+	}
+
+	ManaCost: {
+		Label: Cout de mana
+		// Tooltip: ""
+	}
+
+	MaxMinions: {
+		Label: Maximum de Minions
+		// Tooltip: ""
+	}
+
+	MaxSentries: {
+		Label: Maximum de tourelles
+		// Tooltip: ""
+	}
+}
