@@ -3,92 +3,92 @@ CharacterStatsConfig: {
 	Headers.StatVisibility: Visibilidad de las estadíst
 
 	DamageMultiplier: {
-		Label: Dano
+		Label: "[i:4] Dano"
 		// Tooltip: ""
 	}
 
 	CriticalHitChance: {
-		Label: Probabilidad critica
+		Label: "[i:3520] Probabilidad critica"
 		// Tooltip: ""
 	}
 
 	AttackSpeed: {
-		Label: Velocidad de ataque
+		Label: "[i:936] Velocidad de ataque"
 		// Tooltip: ""
 	}
 
 	Knockback: {
-		Label: Empuje
+		Label: "[i:442] Empuje"
 		// Tooltip: ""
 	}
 
 	ArmorPenetration: {
-		Label: Penetracion de defensa
+		Label: "[i:3212] Penetracion de defensa"
 		// Tooltip: ""
 	}
 
 	Defense: {
-		Label: Defensa
+		Label: "[i:156] Defensa"
 		// Tooltip: ""
 	}
 
 	Endurance: {
-		Label: Resistencia
+		Label: "[i:938] Resistencia"
 		// Tooltip: ""
 	}
 
 	LifeRegeneration: {
-		Label: Regeneracion
+		Label: "[i:49] Regeneracion"
 		// Tooltip: ""
 	}
 
 	MovementSpeed: {
-		Label: Velocidad de movimiento
+		Label: "[i:54] Velocidad de movimiento"
 		// Tooltip: ""
 	}
 
 	JumpHeight: {
-		Label: Altura de Salto
+		Label: "[i:159] Altura de Salto"
 		// Tooltip: ""
 	}
 
 	MiningSpeed: {
-		Label: Velocidad de mineria
+		Label: "[i:1] Velocidad de mineria"
 		// Tooltip: ""
 	}
 
 	EnemyAggro: {
-		Label: Aggro. Enemigo
+		Label: "[i:193] Aggro. Enemigo"
 		// Tooltip: ""
 	}
 
 	Luck: {
-		Label: Suerte
+		Label: "[i:4414] Suerte"
 		// Tooltip: ""
 	}
 
 	FishingPower: {
-		Label: Potencia de pesca
+		Label: "[i:2291] Potencia de pesca"
 		// Tooltip: ""
 	}
 
 	ManaRegeneration: {
-		Label: Regeneracion de Mana
+		Label: "[i:111] Regeneracion de Mana"
 		// Tooltip: ""
 	}
 
 	ManaCost: {
-		Label: Costo de Mana
+		Label: "[i:109] Costo de Mana"
 		// Tooltip: ""
 	}
 
 	MaxMinions: {
-		Label: Maximos subditos
+		Label: "[i:5069] Maximos subditos"
 		// Tooltip: ""
 	}
 
 	MaxSentries: {
-		Label: Maximos centinelas
+		Label: "[i:3825] Maximos centinelas"
 		// Tooltip: ""
 	}
 }

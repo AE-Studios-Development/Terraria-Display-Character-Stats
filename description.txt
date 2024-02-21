@@ -47,6 +47,11 @@ tModLoader Version: v2023.12.3.1
 
 CHANGELOGS:
 
+v0.6.2 - 2/21/2024
+- Fixed other languages not having config icons
+- Optimizations for endurance stat calculation
+- Source code organization
+
 v0.6.1 - 2/9/2024
 - Added Icons to respective stats name in the configs for easier navigation
 - Updated the Steam workshop page thumbnails

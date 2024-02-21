@@ -14,8 +14,8 @@ namespace CharacterStats.Content
 
 		public override string DisplayValue(ref Color displayColor) {
 			int lifeRegenInfo = Main.LocalPlayer.GetModPlayer<MainScriptPlayer>().lifeRegenStat;
-			float hpPerSec = (float)lifeRegenInfo / 2;
-			return $"Life Regen: {hpPerSec.ToString("N1")} hp/s";
+            float hpPerSec = (float)lifeRegenInfo / 2;
+            return $"Life Regen: {hpPerSec.ToString("N1")} hp/s";
 		}
 	}
 }

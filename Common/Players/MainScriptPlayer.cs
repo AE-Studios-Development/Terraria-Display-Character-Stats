@@ -5,6 +5,7 @@ using Terraria.Localization;
 using CharacterStats.Common.Systems; 
 using System.Collections.Generic;
 using System.CodeDom.Compiler;
+using System;
 
 namespace CharacterStats.Common.Players
 {
@@ -19,15 +20,12 @@ namespace CharacterStats.Common.Players
 
 		public float miningSpeedStat = 0;
 		public float moveSpeedStat = 0;
-		public int jumpHeightStat = 0;
-		public float jumpSpeedStat = 0;
 
 		public int fishingPowerStat = 0;
         public float luckStat = 0;
         public int aggroStat = 0;
 
 		public int defenseStat = 0;
-		public float dmgReductionStat = 0;
 		public int lifeRegenStat = 0;
 
 		public float manaCostStat = 0;
@@ -35,7 +33,13 @@ namespace CharacterStats.Common.Players
 		public int maxMinionsStat = 0;
 		public int maxSentriesStat = 0;
 
-		public bool paladinShield = false;
+        public double jumpHeightStat = 0;
+        public int jumpHeightInfo = 0;
+        public float jumpSpeedInfo = 0;
+
+        public double enduranceStat = 0;
+        public float dmgReductionAdd = 0;
+        public bool paladinShield = false;
 		public bool solarBlaze = false;
 		public int beetleEndurance = 0;
 
@@ -75,50 +79,49 @@ namespace CharacterStats.Common.Players
 				armorPentrStat += Player.GetArmorPenetration(DamageClassLoader.GetDamageClass(itemClassIndex));
 			}
 
-			// Get other stats
+			// Get player variables stats
 			miningSpeedStat = Player.pickSpeed;
 			moveSpeedStat = Player.maxRunSpeed;
-			jumpHeightStat = Player.jumpHeight;
-			jumpSpeedStat = Player.jumpSpeed;
-			
-			aggroStat = Player.aggro;
+
+            aggroStat = Player.aggro;
             luckStat = Player.luck;
 			fishingPowerStat = Player.GetFishingConditions().FinalFishingLevel;
 
 			defenseStat = Player.statDefense;
-            dmgReductionStat = Player.endurance;
-			lifeRegenStat = Player.lifeRegen;
+            lifeRegenStat = Player.lifeRegen;
 
-			manaCostStat = Player.manaCost;
+            manaCostStat = Player.manaCost;
 			manaRegenStat = Player.manaRegen;
+
 			maxMinionsStat = Player.maxMinions;
 			maxSentriesStat = Player.maxTurrets;
 
-			// Calculate endurance stat
-			bool hasPaladinShield = false;
-			bool hasSolarBlaze = false;
-			int hasBeetleEndurance = 0;
+            // Calculate jump height stat
+            jumpHeightInfo = Player.jumpHeight;
+            jumpSpeedInfo = Player.jumpSpeed;
 
-			for (int i = 0; i < Player.buffType.Length; i++) {
+            jumpHeightStat = (((float)jumpHeightInfo + 1) * (jumpSpeedInfo - .4) + .2 * Math.Pow((jumpSpeedInfo / .4) - 1, 2)) / 16;
+
+            // Calculate endurance stat
+            for (int i = 0; i < Player.buffType.Length; i++) {
 				switch (Player.buffType[i]) {
 					case 170: case 171: case 172:
-						hasSolarBlaze = true;
+						solarBlaze = true;
 						break;
 					case 95: case 96: case 97:
-						hasBeetleEndurance = Player.buffType[i] - 94;
+						beetleEndurance = Player.buffType[i] - 94;
 						break;
 					case 43:
-						hasPaladinShield = true;
+						paladinShield = true;
 						break;
 					default:
 						break;
 				}
 			}
 
-			paladinShield = hasPaladinShield;
-			solarBlaze = hasSolarBlaze;
-			beetleEndurance = hasBeetleEndurance;
-		}
+            dmgReductionAdd = Player.endurance;
+            enduranceStat = 100 - ((paladinShield ? 0.75 : 1) * (solarBlaze ? 0.8 : 1) * (beetleEndurance > 0 ? 1 - (0.15 * beetleEndurance) : 1) * (1 - dmgReductionAdd)) * 100;
+        }
 
 		// Player inputs
 		public override void ProcessTriggers(TriggersSet triggersSet)

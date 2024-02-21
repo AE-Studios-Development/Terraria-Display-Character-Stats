@@ -1,5 +1,7 @@
 using System.ComponentModel;
 using Terraria.ModLoader.Config;
+using System.Collections.Generic;
+using Terraria.ID;
 
 namespace CharacterStats.Common.Configs
 {
@@ -8,7 +10,7 @@ namespace CharacterStats.Common.Configs
         public override ConfigScope Mode => ConfigScope.ClientSide;
 
         [Header("StatVisibility")]
-
+        
         [DefaultValue(true)]
         public bool DamageMultiplier;
 

@@ -13,13 +13,8 @@ namespace CharacterStats.Content
 		}
 
 		public override string DisplayValue(ref Color displayColor) {
-			float dmgReductionAddInfo = Main.LocalPlayer.GetModPlayer<MainScriptPlayer>().dmgReductionStat;
-			bool hasPaladinShield = Main.LocalPlayer.GetModPlayer<MainScriptPlayer>().paladinShield;
-			bool hasSolarBlaze = Main.LocalPlayer.GetModPlayer<MainScriptPlayer>().solarBlaze;
-			int hasBeetleEndurance = Main.LocalPlayer.GetModPlayer<MainScriptPlayer>().beetleEndurance;
-
-			double totalDamageReduction = 100 - ((hasPaladinShield ? 0.75 : 1) * (hasSolarBlaze ? 0.8 : 1) * (hasBeetleEndurance > 0 ? 1 - (0.15 * hasBeetleEndurance) : 1) * (1 - dmgReductionAddInfo)) * 100;
-			return $"Endurance: {totalDamageReduction.ToString("N0")} %";
+			double enduranceInfo = Main.LocalPlayer.GetModPlayer<MainScriptPlayer>().enduranceStat;
+            return $"Endurance: {enduranceInfo.ToString("N1")} %";
 		}
 	}
 }

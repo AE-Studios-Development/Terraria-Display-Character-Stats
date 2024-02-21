@@ -3,7 +3,6 @@ using Terraria.ModLoader;
 using CharacterStats.Common.Players;
 using CharacterStats.Common.Configs;
 using Microsoft.Xna.Framework;
-using System;
 
 namespace CharacterStats.Content
 {
@@ -14,10 +13,8 @@ namespace CharacterStats.Content
 		}
 
 		public override string DisplayValue(ref Color displayColor) {
-			int jumpHeightInfo = Main.LocalPlayer.GetModPlayer<MainScriptPlayer>().jumpHeightStat;
-			float jumpSpeedInfo = Main.LocalPlayer.GetModPlayer<MainScriptPlayer>().jumpSpeedStat;
-			double approxJumpPower = (((float)jumpHeightInfo + 1) * (jumpSpeedInfo - .4) + .2 * Math.Pow((jumpSpeedInfo / .4) - 1, 2)) / 16;
-			return $"Jump Height: {approxJumpPower.ToString("N2")} tiles";
+			double jumpHeightInfo = Main.LocalPlayer.GetModPlayer<MainScriptPlayer>().jumpHeightStat;
+			return $"Jump Height: {jumpHeightInfo.ToString("N2")} tiles";
 		}
 	}
 }
