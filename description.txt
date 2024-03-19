@@ -37,15 +37,20 @@ DISPLAY ICON COLORS
 - Blue = Others
 - Purple = Magic/Summon
 
-*Localization is currently work in progress*
-
 French Localization by Cedminer66
 Spanish Localization by eloas3
 
+*Localization is a work in progress*
+
 Terraria Version: v1.4.4.9
-tModLoader Version: v2023.12.3.1
+tModLoader Version: v2024.1.3.0
 
 CHANGELOGS:
+
+v0.6.3 - 3/19/2024
+- Fixed keybind translations not working
+- Fixed calculation error in endurance stat
+- Updated to latest version of TmodLoader
 
 v0.6.2 - 2/21/2024
 - Fixed other languages not having config icons

@@ -84,8 +84,8 @@ namespace CharacterStats.Common.Players
 			moveSpeedStat = Player.maxRunSpeed;
 
             aggroStat = Player.aggro;
-            luckStat = Player.luck;
-			fishingPowerStat = Player.GetFishingConditions().FinalFishingLevel;
+			luckStat = Player.luck;
+            fishingPowerStat = Player.GetFishingConditions().FinalFishingLevel;
 
 			defenseStat = Player.statDefense;
             lifeRegenStat = Player.lifeRegen;
@@ -100,9 +100,13 @@ namespace CharacterStats.Common.Players
             jumpHeightInfo = Player.jumpHeight;
             jumpSpeedInfo = Player.jumpSpeed;
 
-            jumpHeightStat = (((float)jumpHeightInfo + 1) * (jumpSpeedInfo - .4) + .2 * Math.Pow((jumpSpeedInfo / .4) - 1, 2)) / 16;
+            jumpHeightStat = (((float)jumpHeightInfo + 1) * (jumpSpeedInfo - 0.4) + 0.2 * Math.Pow((jumpSpeedInfo / 0.4) - 1, 2)) / 16;
 
             // Calculate endurance stat
+			paladinShield = false;
+			solarBlaze = false;
+			beetleEndurance = 0;
+
             for (int i = 0; i < Player.buffType.Length; i++) {
 				switch (Player.buffType[i]) {
 					case 170: case 171: case 172:

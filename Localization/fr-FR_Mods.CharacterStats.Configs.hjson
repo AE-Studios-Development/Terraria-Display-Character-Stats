@@ -1,6 +1,6 @@
 CharacterStatsConfig: {
 	DisplayName: Display Character Stats Configs
-	Headers.StatVisibility: Visibilité des stats
+	Headers.StatVisibility: Visibilite des stats
 
 	DamageMultiplier: {
 		Label: "[i:4] Degats"

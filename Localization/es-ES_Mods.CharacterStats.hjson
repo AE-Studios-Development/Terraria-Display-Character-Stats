@@ -2,7 +2,7 @@ Mods: {
 	CharacterStats: {
 		Keybinds: {
 			ChangeStatClassKeybind.DisplayName: Cambiar daño de clase
-			StatVisibilityKeybind.DisplayName: Visibilidad de las estadíst.
+			StatVisibilityKeybind.DisplayName: Visibilidad de las estadíst
 		}
 
 		InfoDisplays: {
@@ -29,6 +29,6 @@ Mods: {
 }
 
 Keybinds: {
-	// StatVisibilityKeybind.DisplayName: Stat Visibility Keybind
-	// ChangeStatClassKeybind.DisplayName: Change Stat Class Keybind
+	StatVisibilityKeybind.DisplayName: Visibilidad de las estadíst
+	ChangeStatClassKeybind.DisplayName: Cambiar daño de clase
 }

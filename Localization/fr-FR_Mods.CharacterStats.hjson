@@ -29,6 +29,6 @@ Mods: {
 }
 
 Keybinds: {
-	// StatVisibilityKeybind.DisplayName: Stat Visibility Keybind
-	// ChangeStatClassKeybind.DisplayName: Change Stat Class Keybind
+	StatVisibilityKeybind.DisplayName: Alterner la visibilité des stats
+	ChangeStatClassKeybind.DisplayName: Changer de class de dégâts
 }

@@ -11,9 +11,9 @@ namespace CharacterStats.Content
 		public override bool Active() {
 			return Main.LocalPlayer.GetModPlayer<MainScriptPlayer>().statsShown && ModContent.GetInstance<CharacterStatsConfig>().DamageMultiplier;
 		}
-
+		
 		public override string DisplayValue(ref Color displayColor) {
-			float damageInfo = Main.LocalPlayer.GetModPlayer<MainScriptPlayer>().damageStat;
+            float damageInfo = Main.LocalPlayer.GetModPlayer<MainScriptPlayer>().damageStat;
             return $"Damage: {damageInfo.ToString("N2")} x";
         }
 	}
