@@ -3,6 +3,7 @@ using Terraria.ModLoader;
 using CharacterStats.Common.Players;
 using CharacterStats.Common.Configs;
 using Microsoft.Xna.Framework;
+using Terraria.Localization;
 
 namespace CharacterStats.Content
 {
@@ -14,7 +15,8 @@ namespace CharacterStats.Content
 
 		public override string DisplayValue(ref Color displayColor) {
 			int fishInfo = Main.LocalPlayer.GetModPlayer<MainScriptPlayer>().fishingPowerStat;
-			return $"Fishing Power: {fishInfo.ToString("N0")}";
+            string textInfo = Language.GetTextValue("Mods.CharacterStats.InfoDisplays.d3_FishingPower.DisplayName");
+            return $"{textInfo}: {fishInfo}";
 		}
 	}
 }

@@ -3,6 +3,8 @@ using Terraria.ModLoader;
 using CharacterStats.Common.Players;
 using CharacterStats.Common.Configs;
 using Microsoft.Xna.Framework;
+using Terraria.Localization;
+using System;
 
 namespace CharacterStats.Content
 {
@@ -14,7 +16,8 @@ namespace CharacterStats.Content
 
 		public override string DisplayValue(ref Color displayColor) {
 			float critChanceInfo = Main.LocalPlayer.GetModPlayer<MainScriptPlayer>().critChanceStat;
-			return $"Critical Chance: {critChanceInfo} %";
+            string textInfo = Language.GetTextValue("Mods.CharacterStats.InfoDisplays.a2_CriticalChance.DisplayName");
+            return $"{textInfo}: {Math.Round(critChanceInfo, 0)} %";
 		}
 	}
 }

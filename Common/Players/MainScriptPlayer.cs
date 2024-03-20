@@ -36,6 +36,7 @@ namespace CharacterStats.Common.Players
         public double jumpHeightStat = 0;
         public int jumpHeightInfo = 0;
         public float jumpSpeedInfo = 0;
+		public float gravityInfo = 0;
 
         public double enduranceStat = 0;
         public float dmgReductionAdd = 0;
@@ -99,8 +100,9 @@ namespace CharacterStats.Common.Players
             // Calculate jump height stat
             jumpHeightInfo = Player.jumpHeight;
             jumpSpeedInfo = Player.jumpSpeed;
+			gravityInfo = Player.gravity;
 
-            jumpHeightStat = (((float)jumpHeightInfo + 1) * (jumpSpeedInfo - 0.4) + 0.2 * Math.Pow((jumpSpeedInfo / 0.4) - 1, 2)) / 16;
+            jumpHeightStat = (((float)jumpHeightInfo + 1) * (jumpSpeedInfo - gravityInfo) + (gravityInfo / 2) * Math.Pow((jumpSpeedInfo / gravityInfo) - 1, 2)) / 16;
 
             // Calculate endurance stat
 			paladinShield = false;

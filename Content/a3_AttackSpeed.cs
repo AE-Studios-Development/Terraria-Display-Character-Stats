@@ -3,6 +3,8 @@ using Terraria.ModLoader;
 using CharacterStats.Common.Players;
 using CharacterStats.Common.Configs;
 using Microsoft.Xna.Framework;
+using Terraria.Localization;
+using System;
 
 namespace CharacterStats.Content
 {
@@ -14,7 +16,8 @@ namespace CharacterStats.Content
 
 		public override string DisplayValue(ref Color displayColor) {
 			float attackSpeedInfo = Main.LocalPlayer.GetModPlayer<MainScriptPlayer>().attackSpeedStat;
-			return $"Attack Speed: {attackSpeedInfo.ToString("N2")} x";
+            string textInfo = Language.GetTextValue("Mods.CharacterStats.InfoDisplays.a3_AttackSpeed.DisplayName");
+            return $"{textInfo}: {Math.Round(attackSpeedInfo, 2)} x";
 		}
 	}
 }

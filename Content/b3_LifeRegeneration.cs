@@ -3,6 +3,9 @@ using Terraria.ModLoader;
 using CharacterStats.Common.Players;
 using CharacterStats.Common.Configs;
 using Microsoft.Xna.Framework;
+using System.Globalization;
+using Terraria.Localization;
+using System;
 
 namespace CharacterStats.Content
 {
@@ -15,7 +18,8 @@ namespace CharacterStats.Content
 		public override string DisplayValue(ref Color displayColor) {
 			int lifeRegenInfo = Main.LocalPlayer.GetModPlayer<MainScriptPlayer>().lifeRegenStat;
             float hpPerSec = (float)lifeRegenInfo / 2;
-            return $"Life Regen: {hpPerSec.ToString("N1")} hp/s";
+            string textInfo = Language.GetTextValue("Mods.CharacterStats.InfoDisplays.b3_LifeRegeneration.DisplayName");
+            return $"{textInfo}: {Math.Round(hpPerSec, 1)} hp/s";
 		}
 	}
 }

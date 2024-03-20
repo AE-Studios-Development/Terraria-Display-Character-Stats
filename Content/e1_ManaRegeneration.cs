@@ -3,6 +3,8 @@ using Terraria.ModLoader;
 using CharacterStats.Common.Players;
 using CharacterStats.Common.Configs;
 using Microsoft.Xna.Framework;
+using Terraria.Localization;
+using System;
 
 namespace CharacterStats.Content
 {
@@ -15,7 +17,8 @@ namespace CharacterStats.Content
 		public override string DisplayValue(ref Color displayColor) {
 			int manaRegenInfo = Main.LocalPlayer.GetModPlayer<MainScriptPlayer>().manaRegenStat;
 			float mpPerSec = (float)manaRegenInfo / 2;
-			return $"Mana Regen: {mpPerSec.ToString("N1")} mp/s";
+            string textInfo = Language.GetTextValue("Mods.CharacterStats.InfoDisplays.e1_ManaRegeneration.DisplayName");
+            return $"{textInfo}: {Math.Round(mpPerSec, 1)} mp/s";
 		}
 	}
 }

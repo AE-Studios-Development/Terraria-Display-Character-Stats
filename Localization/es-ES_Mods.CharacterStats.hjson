@@ -1,34 +1,25 @@
-Mods: {
-	CharacterStats: {
-		Keybinds: {
-			ChangeStatClassKeybind.DisplayName: Cambiar daño de clase
-			StatVisibilityKeybind.DisplayName: Visibilidad de las estadíst
-		}
-
-		InfoDisplays: {
-			d1_Aggro.DisplayName: Aggro. Enemigo
-			a5_ArmorPenetration.DisplayName: Penetracion de defensa
-			a3_AttackSpeed.DisplayName: Velocidad de ataque
-			a2_CriticalChance.DisplayName: Probabilidad crítica
-			a1_Damage.DisplayName: Daño
-			b2_Endurance.DisplayName: Resistencia
-			c2_JumpHeight.DisplayName: Altura de Salto
-			a4_Knockback.DisplayName: Empuje
-			b3_LifeRegeneration.DisplayName: Regeneración
-			d2_Luck.DisplayName: Suerte
-			e2_ManaCost.DisplayName: Costo de Maná
-			e1_ManaRegeneration.DisplayName: Regeneración de Maná
-			e3_MaxMinions.DisplayName: Máximos súbditos
-			c3_MiningSpeed.DisplayName: Velocidad de minería
-			c1_MovementSpeed.DisplayName: Velocidad de movimiento
-			e4_MaxSentries.DisplayName: Máximos centinelas
-			b1_Defense.DisplayName: Defensa
-			d3_FishingPower.DisplayName: Fishing Power
-		}
-	}
+Keybinds: {
+	ChangeStatClassKeybind.DisplayName: Cambiar daño de clase
+	StatVisibilityKeybind.DisplayName: Visibilidad de las estadíst
 }
 
-Keybinds: {
-	StatVisibilityKeybind.DisplayName: Visibilidad de las estadíst
-	ChangeStatClassKeybind.DisplayName: Cambiar daño de clase
+InfoDisplays: {
+	d1_Aggro.DisplayName: Aggro. Enemigo
+	a5_ArmorPenetration.DisplayName: Penetracion de defensa
+	a3_AttackSpeed.DisplayName: Velocidad de ataque
+	a2_CriticalChance.DisplayName: Probabilidad crítica
+	a1_Damage.DisplayName: Daño
+	b2_Endurance.DisplayName: Resistencia
+	c2_JumpHeight.DisplayName: Altura de Salto
+	a4_Knockback.DisplayName: Empuje
+	b3_LifeRegeneration.DisplayName: Regeneración
+	d2_Luck.DisplayName: Suerte
+	e2_ManaCost.DisplayName: Costo de Maná
+	e1_ManaRegeneration.DisplayName: Regeneración de Maná
+	e3_MaxMinions.DisplayName: Máximos súbditos
+	c3_MiningSpeed.DisplayName: Velocidad de minería
+	c1_MovementSpeed.DisplayName: Velocidad de movimiento
+	e4_MaxSentries.DisplayName: Máximos centinelas
+	b1_Defense.DisplayName: Defensa
+	d3_FishingPower.DisplayName: Fishing Power
 }

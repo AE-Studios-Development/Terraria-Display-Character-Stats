@@ -3,6 +3,8 @@ using Terraria.ModLoader;
 using CharacterStats.Common.Players;
 using CharacterStats.Common.Configs;
 using Microsoft.Xna.Framework;
+using Terraria.Localization;
+using System;
 
 namespace CharacterStats.Content
 {
@@ -14,7 +16,8 @@ namespace CharacterStats.Content
 
 		public override string DisplayValue(ref Color displayColor) {
 			float miningSpeedInfo = (1 - Main.LocalPlayer.GetModPlayer<MainScriptPlayer>().miningSpeedStat) * 100;
-			return $"Mining Speed: {miningSpeedInfo.ToString("N0")} %";
+            string textInfo = Language.GetTextValue("Mods.CharacterStats.InfoDisplays.c3_MiningSpeed.DisplayName");
+            return $"{textInfo}: {Math.Round(miningSpeedInfo, 0)} %";
 		}
 	}
 }

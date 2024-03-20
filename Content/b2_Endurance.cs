@@ -3,6 +3,8 @@ using Terraria.ModLoader;
 using CharacterStats.Common.Players;
 using CharacterStats.Common.Configs;
 using Microsoft.Xna.Framework;
+using Terraria.Localization;
+using System;
 
 namespace CharacterStats.Content
 {
@@ -14,7 +16,8 @@ namespace CharacterStats.Content
 
 		public override string DisplayValue(ref Color displayColor) {
 			double enduranceInfo = Main.LocalPlayer.GetModPlayer<MainScriptPlayer>().enduranceStat;
-            return $"Endurance: {enduranceInfo.ToString("N1")} %";
+            string textInfo = Language.GetTextValue("Mods.CharacterStats.InfoDisplays.b2_Endurance.DisplayName");
+            return $"{textInfo}: {Math.Round(enduranceInfo, 1)} %";
 		}
 	}
 }

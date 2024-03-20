@@ -3,6 +3,7 @@ using Terraria.ModLoader;
 using CharacterStats.Common.Players;
 using CharacterStats.Common.Configs;
 using Microsoft.Xna.Framework;
+using Terraria.Localization;
 
 namespace CharacterStats.Content
 {
@@ -14,7 +15,8 @@ namespace CharacterStats.Content
 
 		public override string DisplayValue(ref Color displayColor) {
 			int defenseInfo = Main.LocalPlayer.GetModPlayer<MainScriptPlayer>().defenseStat;
-			return $"Defense: {defenseInfo.ToString("N0")}";
+            string textInfo = Language.GetTextValue("Mods.CharacterStats.InfoDisplays.b1_Defense.DisplayName");
+            return $"{textInfo}: {defenseInfo}";
 		}
 	}
 }

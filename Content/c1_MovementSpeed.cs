@@ -3,6 +3,8 @@ using Terraria.ModLoader;
 using CharacterStats.Common.Players;
 using CharacterStats.Common.Configs;
 using Microsoft.Xna.Framework;
+using Terraria.Localization;
+using System;
 
 namespace CharacterStats.Content
 {
@@ -14,7 +16,8 @@ namespace CharacterStats.Content
 
 		public override string DisplayValue(ref Color displayColor) {
 			float moveSpeedInfo = Main.LocalPlayer.GetModPlayer<MainScriptPlayer>().moveSpeedStat / 3;
-			return $"Move Speed: {moveSpeedInfo.ToString("N2")} x";
+            string textInfo = Language.GetTextValue("Mods.CharacterStats.InfoDisplays.c1_MovementSpeed.DisplayName");
+            return $"{textInfo}: {Math.Round(moveSpeedInfo, 2)} x";
 		}
 	}
 }

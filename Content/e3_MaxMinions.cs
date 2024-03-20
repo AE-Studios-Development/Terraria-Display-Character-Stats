@@ -3,6 +3,7 @@ using Terraria.ModLoader;
 using CharacterStats.Common.Players;
 using CharacterStats.Common.Configs;
 using Microsoft.Xna.Framework;
+using Terraria.Localization;
 
 namespace CharacterStats.Content
 {
@@ -14,7 +15,8 @@ namespace CharacterStats.Content
 
 		public override string DisplayValue(ref Color displayColor) {
 			int maxMinionsInfo = Main.LocalPlayer.GetModPlayer<MainScriptPlayer>().maxMinionsStat;
-			return $"Max Minions: {maxMinionsInfo.ToString("N0")}";
+            string textInfo = Language.GetTextValue("Mods.CharacterStats.InfoDisplays.e3_MaxMinions.DisplayName");
+            return $"{textInfo}: {maxMinionsInfo}";
 		}
 	}
 }

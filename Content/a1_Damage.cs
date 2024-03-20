@@ -3,6 +3,8 @@ using Terraria.ModLoader;
 using CharacterStats.Common.Players;
 using CharacterStats.Common.Configs;
 using Microsoft.Xna.Framework;
+using Terraria.Localization;
+using System;
 
 namespace CharacterStats.Content
 {
@@ -14,7 +16,8 @@ namespace CharacterStats.Content
 		
 		public override string DisplayValue(ref Color displayColor) {
             float damageInfo = Main.LocalPlayer.GetModPlayer<MainScriptPlayer>().damageStat;
-            return $"Damage: {damageInfo.ToString("N2")} x";
+			string textInfo = Language.GetTextValue("Mods.CharacterStats.InfoDisplays.a1_Damage.DisplayName");
+            return $"{textInfo}: {Math.Round(damageInfo, 2)} x";
         }
 	}
 }

@@ -3,6 +3,8 @@ using Terraria.ModLoader;
 using CharacterStats.Common.Players;
 using CharacterStats.Common.Configs;
 using Microsoft.Xna.Framework;
+using Terraria.Localization;
+using System;
 
 namespace CharacterStats.Content
 {
@@ -14,7 +16,8 @@ namespace CharacterStats.Content
 
 		public override string DisplayValue(ref Color displayColor) {
 			float manaCostInfo = (1 - Main.LocalPlayer.GetModPlayer<MainScriptPlayer>().manaCostStat)*100;
-			return $"Mana Efficiency: {manaCostInfo.ToString("N0")} %";
+            string textInfo = Language.GetTextValue("Mods.CharacterStats.InfoDisplays.e2_ManaCost.DisplayName");
+            return $"{textInfo}: {Math.Round(manaCostInfo, 1)} %";
 		}
 	}
 }
